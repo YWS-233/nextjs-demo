@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="min-h-[calc(100vh-100px)]">{children}</main>
       <Footer />
     </>
   );

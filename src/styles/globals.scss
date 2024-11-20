@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --auto-bg: #f2f3f7;
+  --auto-title-color: #111e36;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import 'reset';
+@import '../../node_modules/tailwindcss/base.css';
+@import '../../node_modules/tailwindcss/components.css';
+@import '../../node_modules/tailwindcss/utilities.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: PingFang SC, sans-serif !important;
+  background-color: var(--auto-bg);
+  user-select: none;
+}
